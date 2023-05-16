@@ -721,3 +721,13 @@ input:focus {
         padding: 15px;
     }
 }
+
+.card-primary {
+    tbody {
+        tr {
+            td {
+                text-align: center;
+            }
+        }
+    }
+}
