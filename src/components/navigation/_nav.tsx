@@ -14,7 +14,6 @@ export default () => {
                             </a>
                         </div>
                         <div className="col-lg-6 center" >
-                            <a href="/item-filter">Filter</a>
                             <div className="form-group">
                                 <input className="form-control" type="text" placeholder="Agv, Kyoto, Wearpack" />
                                 <div className="wrapper">
@@ -24,7 +23,7 @@ export default () => {
                         </div>
                         <div className="col-lg-3 right" >
                             <Dropdown className='rounded'>
-                                <Dropdown.Toggle variant="success" className='bg-transparent text-dark rounded overflow-hidden' id="dropdown-basic">
+                                <Dropdown.Toggle className='bg-transparent text-dark rounded overflow-hidden' id="dropdown-basic">
                                     <img src="./img/logo/tab-icon.png" alt="" width={25} height={25} />
 
                                     Hi, Tubagus Store!
@@ -36,33 +35,25 @@ export default () => {
                                             Gold Member
                                         </div>
                                     </Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2" className="rounded">
-                                        <a href="/ice-box">
-                                            <div className="text-dark">
-                                                <FontAwesomeIcon icon={faBoxOpen} />  Ice box
-                                            </div>
-                                        </a>
+                                    <Dropdown.Item href="/ice-box" className="rounded">
+                                        <div className="text-dark">
+                                            <FontAwesomeIcon icon={faBoxOpen} />  Ice box
+                                        </div>
                                     </Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3" className="rounded">
-                                        <a href="/ice-box">
-                                            <div className="text-dark">
-                                                <FontAwesomeIcon icon={faClock} />  Timeline
-                                            </div>
-                                        </a>
+                                    <Dropdown.Item href="/ice-box" className="rounded">
+                                        <div className="text-dark">
+                                            <FontAwesomeIcon icon={faClock} />  Timeline
+                                        </div>
                                     </Dropdown.Item>
-                                    <Dropdown.Item className="rounded">
-                                        <a href="/user/item">
-                                            <div className="text-dark">
-                                                <FontAwesomeIcon icon={faBoxArchive} /> Kelola Item
-                                            </div>
-                                        </a>
+                                    <Dropdown.Item href="/manage-item" className="rounded">
+                                        <div className="text-dark">
+                                            <FontAwesomeIcon icon={faBoxArchive} /> Kelola Item
+                                        </div>
                                     </Dropdown.Item>
                                     <Dropdown.Item className="rounded">
-                                        <a href="/user/setting">
-                                            <div className="text-dark">
-                                                <FontAwesomeIcon icon={faGears} /> Setting Profile
-                                            </div>
-                                        </a>
+                                        <div className="text-dark">
+                                            <FontAwesomeIcon icon={faGears} /> Setting Profile
+                                        </div>
                                     </Dropdown.Item>
                                     <Dropdown.Item className="rounded">
                                         <div className="text-dark">

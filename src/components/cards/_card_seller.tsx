@@ -2,7 +2,7 @@ export default () => {
     return (
         <>
             <a href="/toko-detail" >
-                <div className="card card-item">
+                <div className="card card-item p-0">
                     <div className="card-img">
                         <img src="./img/thumbnail/thumb2.png" />
                     </div>

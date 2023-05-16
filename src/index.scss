@@ -1,3 +1,19 @@
+@import "./assets/styles/buttons";
+@import "./assets/styles/dashboard";
+
+:root {
+    --gradient: linear-gradient(90deg, rgba(5, 70, 97, 1) 0%, rgba(24, 151, 182, 1) 100%);
+    /* --primary: #0f0f50; */
+    --primary: #1588a7;
+    --secondary: #34395e;
+    --success: #47c363;
+    --info: #3abaf4;
+    --warning: #ffa426;
+    --danger: #fc544b;
+    --light: #e3eaef;
+    --dark: #191d21;
+}
+
 * {
     text-decoration: none;
 }
@@ -84,38 +100,8 @@ a:hover {
     background: linear-gradient(90deg, #fcd24b 0%, #a7610b 12.9%, #f3b62b 60.53%, #b67c1b 100%);
 }
 
-.btn-gradient {
-    background: linear-gradient(90deg, #044660 0.18%, #1596b2 100.18%);
-    color: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    padding: 5px 50px;
-    border: transparent;
-
-    &:hover {
-        color: white;
-    }
-}
-
-.btn-sosmed {
-    width: 100%;
-    padding: 5px 0px 3px 0px;
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    border-color: transparent;
-    font-size: smaller;
-
-    &:hover {
-        background: $gradient;
-        color: white;
-    }
-
-    img {
-        margin-right: 10px;
-    }
+.badge-primary {
+    background-color: var(--primary);
 }
 
 .head-section {
