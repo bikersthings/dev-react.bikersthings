@@ -1,10 +1,11 @@
-import { useState } from 'react'
 import Banner from './components/banner/_banner';
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faMarker } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import CardItem from './components/cards/_card_item_detail';
+import CardWtb from './components/cards/_card_wtb'
+import CardSeller from './components/cards/_card_seller';
 function App() {
 
   const item = [
@@ -23,10 +24,6 @@ function App() {
     { name: 1 },
 
   ]
-
-  const [count, setCount] = useState(0)
-
-  console.log(item)
 
   return (
     <>
@@ -56,19 +53,7 @@ function App() {
               {item.map((item: any, idx) => {
                 return (
                   <SwiperSlide key={idx}>
-                    <a href="/toko-detail" >
-                      <div className="card card-item">
-                        <div className="card-img">
-                          <img src="./img/thumbnail/thumb2.png" />
-                        </div>
-                        <div className="card-body">
-                          <div className="card-logo">
-                            <img src="./img/logo/tab-icon.png" alt="" />
-                          </div>
-                          <p className="card-nama-toko">RC b19 Store <img src="./img/badge/verif.png" alt="" /></p>
-                        </div>
-                      </div>
-                    </a>
+                    <CardSeller />
                   </SwiperSlide>
                 )
               })}
@@ -153,29 +138,10 @@ function App() {
               onSwiper={(swiper) => console.log(swiper)}
             >
 
-              {item.map((item: any, idx) => {
+              {item.map((_, idx) => {
                 return (
                   <SwiperSlide key={idx}>
-                    <a href="/item-detail">
-                      <div className="card card-item">
-                        <div className="card-img">
-                          <img src="./img/thumbnail/thumb3.png" />
-                          <div className="card-status">
-                            WTB
-                          </div>
-                          <div className="card-badges">
-                            <img src="./img/badge/verif.png" alt="" />
-                            <img src="./img/badge/boost-gold.png" alt="" />
-                          </div>
-                        </div>
-                        <div className="card-body">
-                          <p className="card-title">AGV Pista GPRR</p>
-                          <p className="card-price">Rp. 90.000.000</p>
-                          <p className="card-location text-danger"><FontAwesomeIcon icon={faMapMarkerAlt} /> Gandaria City</p>
-
-                        </div>
-                      </div>
-                    </a>
+                    <CardWtb />
                   </SwiperSlide>
                 )
               })}
@@ -193,7 +159,6 @@ function App() {
                   Semua Item di <b>BIKERSTHINGS</b>
                 </div>
                 <div>
-
                 </div>
               </div>
             </div>
@@ -204,25 +169,7 @@ function App() {
             {item.map((_, idx) => {
               return (
                 <div className="col-lg-2 col-6" key={idx}>
-                  <a href="/item-detail">
-                    <div className="card card-item">
-                      <div className="card-img">
-                        <img src="./img/thumbnail/thumb3.png" />
-                        <div className="card-status">
-                          WTB
-                        </div>
-                        <div className="card-badges">
-                          <img src="{{asset('assets/img/badge/verif.png')}}" alt="" />
-                          <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="" />
-                        </div>
-                      </div>
-                      <div className="card-body">
-                        <p className="card-title">example</p>
-                        <p className="card-price">IDR 20000</p>
-                        <p className="card-location text-danger"><FontAwesomeIcon icon={faMapMarkerAlt} /> Gandaria City</p>
-                      </div>
-                    </div>
-                  </a>
+                  <CardWtb />
                 </div>
               )
             })}

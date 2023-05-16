@@ -5,6 +5,7 @@ import {
 
 import Layout from "../components/layout/_layout";
 import App from '../App'
+import IceBox from "../pages/ice-box";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
                 path: "/",
                 element: <App />,
 
+            },
+            {
+                path: "/ice-box",
+                element: <IceBox />,
             },
         ],
     },

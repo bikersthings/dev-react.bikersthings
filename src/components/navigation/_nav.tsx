@@ -1,4 +1,7 @@
 import Dropdown from 'react-bootstrap/Dropdown';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { faBoxArchive, faBoxOpen, faClock, faGears, faPowerOff, faRocket, faTicket } from '@fortawesome/free-solid-svg-icons';
 export default () => {
     return (
         <>
@@ -22,61 +25,66 @@ export default () => {
                         <div className="col-lg-3 right" >
                             <Dropdown className='rounded'>
                                 <Dropdown.Toggle variant="success" className='bg-transparent text-dark rounded overflow-hidden' id="dropdown-basic">
+                                    <img src="./img/logo/tab-icon.png" alt="" width={25} height={25} />
+
                                     Hi, Tubagus Store!
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-1" className=" badge-gold rounded">
+                                        <div >
+                                            Gold Member
+                                        </div>
+                                    </Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2" className="rounded">
+                                        <a href="/ice-box">
+                                            <div className="text-dark">
+                                                <FontAwesomeIcon icon={faBoxOpen} />  Ice box
+                                            </div>
+                                        </a>
+                                    </Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3" className="rounded">
+                                        <a href="/ice-box">
+                                            <div className="text-dark">
+                                                <FontAwesomeIcon icon={faClock} />  Timeline
+                                            </div>
+                                        </a>
+                                    </Dropdown.Item>
+                                    <Dropdown.Item className="rounded">
+                                        <a href="/user/item">
+                                            <div className="text-dark">
+                                                <FontAwesomeIcon icon={faBoxArchive} /> Kelola Item
+                                            </div>
+                                        </a>
+                                    </Dropdown.Item>
+                                    <Dropdown.Item className="rounded">
+                                        <a href="/user/setting">
+                                            <div className="text-dark">
+                                                <FontAwesomeIcon icon={faGears} /> Setting Profile
+                                            </div>
+                                        </a>
+                                    </Dropdown.Item>
+                                    <Dropdown.Item className="rounded">
+                                        <div className="text-dark">
+                                            <FontAwesomeIcon icon={faTicket} /> Ice Coupon : 200
+                                        </div>
+                                    </Dropdown.Item>
+                                    <Dropdown.Item className="rounded">
+                                        <div className="text-dark">
+                                            <FontAwesomeIcon icon={faRocket} /> Boost! Voucher : 50
+                                        </div>
+                                    </Dropdown.Item>
+                                    <Dropdown.Item className="rounded w-100 p-0">
+                                        <button className="btn btn-danger w-100" >
+                                            <FontAwesomeIcon icon={faPowerOff} /> LOGOUT
+                                        </button>
+                                    </Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
-                            {/* <button type="button" className="wrapper dropdown-nav dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./img/logo/tab-icon.png" alt="" />
-                                Hi, Tubagus Store!
-                            </button>
-                            <div className="dropdown-menu dropdown-menu-end" >
-                                <div className="profile-menu badge-gold">
-                                    Gold Member
-                                </div>
-                                <a href="/ice-box">
-                                    <div className="profile-menu">
-                                        <i className="fas fa-gifts"></i> Ice box
-                                    </div>
-                                </a>
-                                <a href="/ice-box">
-                                    <div className="profile-menu">
-                                        <i className="fas fa-hourglass-half"></i> Timeline
-                                    </div>
-                                </a>
-                                <hr />
-                                <a href="/user/item">
-                                    <div className="profile-menu">
-                                        <i className="fas fa-boxes"></i> Kelola Item
-                                    </div>
-                                </a>
-                                <a href="/user/setting">
-                                    <div className="profile-menu">
-                                        <i className="fas fa-user-cog"></i> Setting Profile
-                                    </div>
-                                </a>
-                                <hr />
-                                <div className="profile-menu">
-                                    <i className="fas fa-ticket-alt"></i> Ice Coupon : 200
-                                </div>
-                                <div className="profile-menu">
-                                    <i className="fas fa-rocket"></i> Boost! Voucher : 50
-                                </div>
-                                <a href="">
-                                    <div className="btn btn-danger" >
-                                        <i className="fas fa-sign-out-alt"></i> LOGOUT
-                                    </div>
-                                </a>
-                            </div> */}
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
         </>
     )
 }
