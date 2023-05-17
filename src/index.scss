@@ -12,6 +12,7 @@
     --danger: #fc544b;
     --light: #e3eaef;
     --dark: #191d21;
+    --gray: #efefef;
 }
 
 * {
@@ -102,6 +103,23 @@ a:hover {
 
 .badge-primary {
     background-color: var(--primary);
+}
+
+.badge-dark {
+    background-color: #191d21;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+}
+
+.badge {
+    vertical-align: middle;
+    padding: 7px 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border-radius: 30px;
+    font-size: 12px;
 }
 
 .head-section {
@@ -728,6 +746,30 @@ input:focus {
             td {
                 text-align: center;
             }
+        }
+    }
+}
+
+.swal2-container {
+    .swal2-actions {
+        flex-direction: row-reverse;
+        button {
+            box-shadow: none !important;
+            &:hover,
+            &focus,
+            &:active {
+                box-shadow: none !important;
+            }
+        }
+        .swal2-confirm {
+            background-color: var(--primary);
+        }
+        .swal2-cancel {
+            color: black;
+            background-color: var(--gray);
+        }
+        .swal2-deny {
+            background-color: var(--gray);
         }
     }
 }

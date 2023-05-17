@@ -1,6 +1,44 @@
 import { faPenClip, faRocket, faTrash } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Swal from 'sweetalert2'
+
 export default () => {
+    const deleteItem = () => {
+        Swal.fire({
+            title: 'Hapus Item?',
+            text: 'Item akan terhapus dan menghilang dari daftar pencarian BIKERSTHINGS',
+            icon: 'info',
+            showCancelButton: true,
+            cancelButtonText: 'Cancel',
+            confirmButtonText: 'Ok',
+        }).then((prop) => {
+            if (prop.isConfirmed) {
+                Swal.fire({
+                    title: 'Item Telah Dihapus',
+                    icon: 'success',
+                    confirmButtonText: 'Ok',
+                })
+            }
+        })
+    }
+    const boostItem = () => {
+        Swal.fire({
+            title: 'Boost item?',
+            text: 'Boost! voucher akan terpakai, dan status item akan menjadi Boosted!',
+            icon: 'info',
+            showCancelButton: true,
+            cancelButtonText: 'Cancel',
+            confirmButtonText: 'Ok',
+        }).then((prop) => {
+            if (prop.isConfirmed) {
+                Swal.fire({
+                    text: 'Status item menjadi Boosted!',
+                    icon: 'success',
+                    confirmButtonText: 'Ok',
+                })
+            }
+        })
+    }
     return (
         <>
             <section className="manage-item">
@@ -46,15 +84,19 @@ export default () => {
                                 <td>Otto</td>
                                 <td>Otto</td>
                                 <td>Otto</td>
-                                <td>Otto</td>
+                                <td>
+                                    <div className="badge badge-dark">Reguler</div>
+                                    <div className="badge badge-warning">On Hold</div>
+                                    <div className="badge badge-primary">Boosted!</div>
+                                </td>
                                 <td className="align-middle text-center">
-                                    <button className="btn btn-success" id="swalBoost">
+                                    <button className="btn btn-success" id="swalBoost" onClick={() => boostItem()}>
                                         <FontAwesomeIcon icon={faRocket} />
                                     </button>
                                     <button className="btn btn-warning mx-1 text-white">
                                         <FontAwesomeIcon icon={faPenClip} />
                                     </button>
-                                    <button className="btn btn-danger" id="swalDelete">
+                                    <button className="btn btn-danger" id="swalDelete" onClick={() => deleteItem()}>
                                         <FontAwesomeIcon icon={faTrash} />
                                     </button>
                                 </td>

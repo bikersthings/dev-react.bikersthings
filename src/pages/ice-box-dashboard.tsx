@@ -4,7 +4,7 @@ export default () => {
         <>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-2">
+                    <div className="col-lg-3">
                         <CardCoupon />
                     </div>
                 </div>
