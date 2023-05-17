@@ -11,6 +11,7 @@ import ManageItem from "../pages/manage-item";
 import Profile from "../pages/profile";
 import Wishlist from "../pages/wishlist";
 import IceBoxDashboard from "../pages/ice-box-dashboard";
+import StoreDetail from "../pages/store-detail";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: "/ice-box",
                 element: <IceBox />,
+            },
+            {
+                path: "/store-detail",
+                element: <StoreDetail />,
             },
         ],
     },

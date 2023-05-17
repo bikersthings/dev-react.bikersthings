@@ -1,15 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
-export default () => {
+
+export default (
+    {
+        isWtb
+    }: {
+        isWtb?: boolean
+    }) => {
     return (
         <>
             <a href="/item-detail">
                 <div className="card card-item">
                     <div className="card-img">
                         <img src="./img/thumbnail/thumb3.png" />
-                        <div className="card-status">
-                            WTB
-                        </div>
+                        {isWtb &&
+                            <div className="card-status">
+                                WTB
+                            </div>
+                        }
                         <div className="card-badges">
                             <img src="./img/badge/verif.png" alt="" />
                             <img src="./img/badge/boost-gold.png" alt="" />

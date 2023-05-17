@@ -3,7 +3,6 @@ import Banner from './components/banner/_banner';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
-import CardItem from './components/cards/_card_item_detail';
 import CardWtb from './components/cards/_card_wtb'
 import CardSeller from './components/cards/_card_seller';
 function App() {
