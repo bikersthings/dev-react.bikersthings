@@ -8,7 +8,9 @@ export default () => {
                 <div className="card-footer">
                     <div className="nama-ib">Cross Theme</div>
                     <div className="progress progress-ib my-2" >
-                        <div className="progress-bar progress-bar-striped bg-info progress-bar-animated" style={{ width: '75%' }}>
+                        <div className="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar"></div>
+                        <div className="items">
+                            0 Left
                         </div>
                     </div>
                     <div className="progress-num my-2 text-muted">
@@ -23,6 +25,7 @@ export default () => {
                     </div>
                 </div>
             </div>
+
         </>
     )
 }

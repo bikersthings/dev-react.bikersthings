@@ -1,7 +1,7 @@
 export default () => {
     return (
         <>
-            <a href="/toko-detail" >
+            <a href="/store-detail" >
                 <div className="card card-item p-0">
                     <div className="card-img">
                         <img src="./img/thumbnail/thumb2.png" />

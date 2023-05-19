@@ -26,7 +26,10 @@ export default (
                     <div className="card-body">
                         <p className="card-title">AGV Pista GPRR</p>
                         <p className="card-price">Rp. 90.000.000</p>
-                        <p className="card-location text-danger"><FontAwesomeIcon icon={faMapMarkerAlt} /> Gandaria City</p>
+                        <p className="card-location text-dark d-flex align-items-center gap-2">
+                            <FontAwesomeIcon color="red" icon={faMapMarkerAlt} />
+                            Gandaria City
+                        </p>
                     </div>
                 </div>
             </a>

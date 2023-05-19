@@ -1,18 +1,26 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay } from 'swiper';
+
 export default () => {
+    SwiperCore.use([Autoplay])
     return (
         <>
-            <div className="container text-center pt-5">
+            <div className="container text-center  my-5">
                 <div className="banner">
                     <Swiper
+                        modules={[Autoplay]}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
                         loop={true}
-                        autoplay={true}
                         spaceBetween={20}
                         centeredSlides={true}
-                        slidesPerView={1}
+                        slidesPerView={2}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
+                        className='swiper-banner'
                     >
                         <SwiperSlide>
                             <img src="./img/banner/ban1.png" alt="" width={'100%'} />
