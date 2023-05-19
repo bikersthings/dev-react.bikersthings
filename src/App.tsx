@@ -54,18 +54,18 @@ function App() {
   ]
 
   const brands = [
-    { name: 'Shoei', img: './img/logo-brand/Shoei.png' },
-    { name: 'Arai', img: './img/logo-brand/Arai.png' },
-    { name: 'AGV', img: './img/logo-brand/AGV.png' },
-    { name: 'Dainese', img: './img/logo-brand/Dainese.png' },
-    { name: 'HJC', img: './img/logo-brand/HJC.png' },
-    { name: 'KYT', img: './img/logo-brand/KYT.png' },
-    { name: 'Nolan', img: './img/logo-brand/Nolan.png' },
-    { name: 'RSV', img: './img/logo-brand/RSV.png' },
-    { name: 'Shark', img: './img/logo-brand/Shark.png' },
-    { name: 'Sparco', img: './img/logo-brand/Sparco.png' },
-    { name: 'Taichi', img: './img/logo-brand/Taichi.png' },
-    { name: 'X-Lite', img: './img/logo-brand/X-Lite.png' },
+    { name: 'Shoei', img: '/img/logo-brand/Shoei.png' },
+    { name: 'Arai', img: '/img/logo-brand/Arai.png' },
+    { name: 'AGV', img: '/img/logo-brand/AGV.png' },
+    { name: 'Dainese', img: '/img/logo-brand/Dainese.png' },
+    { name: 'HJC', img: '/img/logo-brand/HJC.png' },
+    { name: 'KYT', img: '/img/logo-brand/KYT.png' },
+    { name: 'Nolan', img: '/img/logo-brand/Nolan.png' },
+    { name: 'RSV', img: '/img/logo-brand/RSV.png' },
+    { name: 'Shark', img: '/img/logo-brand/Shark.png' },
+    { name: 'Sparco', img: '/img/logo-brand/Sparco.png' },
+    { name: 'Taichi', img: '/img/logo-brand/Taichi.png' },
+    { name: 'X-Lite', img: '/img/logo-brand/X-Lite.png' },
   ]
 
   SwiperCore.use([Autoplay]);
@@ -255,7 +255,7 @@ function App() {
                 return (
                   <SwiperSlide>
                     <div className="card-silhouette">
-                      <img src="./img/siluet/helm.png" alt=""></img>
+                      <img src="/img/siluet/helm.png" alt="" />
                       <b>{item.category}</b>
                     </div>
                   </SwiperSlide>

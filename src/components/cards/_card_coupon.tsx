@@ -3,7 +3,7 @@ export default () => {
         <>
             <div className="card card-item-ib">
                 <div className="card-body">
-                    <img src="./img/thumbnail/thumb5.png" alt="" />
+                    <img src="/img/thumbnail/thumb5.png" alt="" />
                 </div>
                 <div className="card-footer">
                     <div className="nama-ib">Cross Theme</div>

@@ -23,16 +23,16 @@ export default () => {
                         className='swiper-banner'
                     >
                         <SwiperSlide>
-                            <img src="./img/banner/ban1.png" alt="" width={'100%'} />
+                            <img src="/img/banner/ban1.png" alt="" width={'100%'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="./img/banner/ban2.png" alt="" width={'100%'} />
+                            <img src="/img/banner/ban2.png" alt="" width={'100%'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="./img/banner/ban3.png" alt="" width={'100%'} />
+                            <img src="/img/banner/ban3.png" alt="" width={'100%'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="./img/banner/ban4.png" alt="" width={'100%'} />
+                            <img src="/img/banner/ban4.png" alt="" width={'100%'} />
                         </SwiperSlide>
                     </Swiper >
                 </div>

@@ -4,7 +4,7 @@ export default () => {
         <>
             <section id="toko-banner">
                 <div className="container">
-                    <img src="./img/banner/ban2.png" alt="" width={'100%'} style={{ height: 'fit-content' }} />
+                    <img src="/img/banner/ban2.png" alt="" width={'100%'} style={{ height: 'fit-content' }} />
                 </div>
             </section>
             <br />

@@ -12,6 +12,7 @@ import Profile from "../pages/profile";
 import Wishlist from "../pages/wishlist";
 import IceBoxDashboard from "../pages/ice-box-dashboard";
 import StoreDetail from "../pages/store-detail";
+import ItemDetail from "../pages/item-detail";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: "/store-detail",
                 element: <StoreDetail />,
+            },
+            {
+                path: "/detail/:id",
+                element: <ItemDetail />,
             },
         ],
     },

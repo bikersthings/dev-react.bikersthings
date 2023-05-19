@@ -19,7 +19,7 @@ export default () => {
                             </div>
                             <Dropdown className='rounded'>
                                 <Dropdown.Toggle variant="success" className='bg-transparent text-dark rounded overflow-hidden' id="dropdown-basic">
-                                    <img src="./img/logo/tab-icon.png" alt="" width={25} height={25} />
+                                    <img src="/img/logo/tab-icon.png" alt="" width={25} height={25} />
 
                                     Hi, Tubagus Store!
                                 </Dropdown.Toggle>

@@ -10,7 +10,7 @@ export default () => {
                     <div className="row">
                         <div className="col-lg-3 left">
                             <a href="/">
-                                <img src="./img/logo/icon.png" alt="" />
+                                <img src="/img/logo/icon.png" alt="" />
                             </a>
                         </div>
                         <div className="col-lg-6 center" >
@@ -27,7 +27,7 @@ export default () => {
                         <div className="col-lg-3 right" >
                             <Dropdown className='rounded'>
                                 <Dropdown.Toggle className='bg-transparent text-dark rounded overflow-hidden' id="dropdown-basic">
-                                    <img src="./img/logo/tab-icon.png" alt="" width={25} height={25} />
+                                    <img src="/img/logo/tab-icon.png" alt="" width={25} height={25} />
 
                                     Hi, Tubagus Store!
                                 </Dropdown.Toggle>

@@ -5,7 +5,7 @@ export default () => {
                 <div className="container">
                     <div className="row logo py-4 justify-content-center">
                         <div className="col-lg-4 col-12">
-                            <img src="./img/logo/icon.png" alt="" />
+                            <img src="/img/logo/icon.png" alt="" />
                         </div>
                     </div>
                     <div className="row">
@@ -16,22 +16,22 @@ export default () => {
                                 </div>
                                 <ul>
                                     <li>
-                                        <img src="./img/footer/payment-bca.png" alt="" />
+                                        <img src="/img/footer/payment-bca.png" alt="" />
                                     </li>
                                     <li>
-                                        <img src="./img/footer/payment-bersama.png" alt="" />
+                                        <img src="/img/footer/payment-bersama.png" alt="" />
                                     </li>
                                     <li>
-                                        <img src="./img/footer/payment-dana.png" alt="" />
+                                        <img src="/img/footer/payment-dana.png" alt="" />
                                     </li>
                                     <li>
-                                        <img src="./img/footer/payment-master.png" alt="" />
+                                        <img src="/img/footer/payment-master.png" alt="" />
                                     </li>
                                     <li>
-                                        <img src="./img/footer/payment-paypal.png" alt="" />
+                                        <img src="/img/footer/payment-paypal.png" alt="" />
                                     </li>
                                     <li>
-                                        <img src="./img/footer/payment-visa.png" alt="" />
+                                        <img src="/img/footer/payment-visa.png" alt="" />
                                     </li>
                                 </ul>
                             </div>
@@ -43,16 +43,16 @@ export default () => {
                                 </div>
                                 <ul>
                                     <li>
-                                        <img src="./img/footer/cour-gosend.png" alt="" />
+                                        <img src="/img/footer/cour-gosend.png" alt="" />
                                     </li>
                                     <li>
-                                        <img src="./img/footer/cour-grabex.png" alt="" />
+                                        <img src="/img/footer/cour-grabex.png" alt="" />
                                     </li>
                                     <li>
-                                        <img src="./img/footer/cour-jne.png" alt="" />
+                                        <img src="/img/footer/cour-jne.png" alt="" />
                                     </li>
                                     <li>
-                                        <img src="./img/footer/cour-ninja.png" alt="" />
+                                        <img src="/img/footer/cour-ninja.png" alt="" />
                                     </li>
                                 </ul>
                             </div>
@@ -83,7 +83,7 @@ export default () => {
                             </div>
                         </div>
                         <div className="col-lg-3 col-5">
-                            <img src="./img/footer/cs.png" alt="" />
+                            <img src="/img/footer/cs.png" alt="" />
                         </div>
                     </div>
                 </div>
