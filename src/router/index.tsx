@@ -13,6 +13,7 @@ import Wishlist from "../pages/wishlist";
 import IceBoxDashboard from "../pages/ice-box-dashboard";
 import StoreDetail from "../pages/store-detail";
 import ItemDetail from "../pages/item-detail";
+import Search from "../pages/search";
 
 const router = createBrowserRouter([
     {
@@ -36,7 +37,12 @@ const router = createBrowserRouter([
                 path: "/detail/:id",
                 element: <ItemDetail />,
             },
+            {
+                path: "/search",
+                element: <Search />,
+            },
         ],
+
     },
     {
         path: "/",

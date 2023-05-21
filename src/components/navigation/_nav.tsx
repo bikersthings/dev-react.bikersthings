@@ -15,11 +15,11 @@ export default () => {
                         </div>
                         <div className="col-lg-6 center" >
                             <div className="form-group">
+                                <a href="/search">Filter</a>
                                 <input className="form-control" type="text" placeholder="Agv, Kyoto, Wearpack" />
                                 <div className="wrapper">
                                     <button className="btn btn-gradient">
                                         <FontAwesomeIcon icon={faSearch} />
-
                                     </button>
                                 </div>
                             </div>
@@ -28,7 +28,6 @@ export default () => {
                             <Dropdown className='rounded'>
                                 <Dropdown.Toggle className='bg-transparent text-dark rounded overflow-hidden' id="dropdown-basic">
                                     <img src="/img/logo/tab-icon.png" alt="" width={25} height={25} />
-
                                     Hi, Tubagus Store!
                                 </Dropdown.Toggle>
 
