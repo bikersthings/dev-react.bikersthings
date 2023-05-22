@@ -1,6 +1,5 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { faBoxArchive, faBoxOpen, faClock, faGears, faPowerOff, faRocket, faSearch, faTicket } from '@fortawesome/free-solid-svg-icons';
 export default () => {
     return (
@@ -14,9 +13,9 @@ export default () => {
                             </a>
                         </div>
                         <div className="col-lg-6 center" >
-                            <div className="form-group">
-                                <a href="/search">Filter</a>
-                                <input className="form-control" type="text" placeholder="Agv, Kyoto, Wearpack" />
+                            <div className="form-group ">
+                                <a href="/search" className='my-auto mr-2'>Filter</a>
+                                <input className="form-control ml-3" type="text" placeholder="Agv, Kyoto, Wearpack" />
                                 <div className="wrapper">
                                     <button className="btn btn-gradient">
                                         <FontAwesomeIcon icon={faSearch} />
